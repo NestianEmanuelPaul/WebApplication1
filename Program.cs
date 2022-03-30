@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using WebApplication1.Data;
+using WebApplication1.Models;
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<WebApplication1Context>(options =>
+builder.Services.AddDbContext<ProductsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("WebApplication1Context")));
 
 // Add services to the container.
