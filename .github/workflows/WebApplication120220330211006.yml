@@ -1,12 +1,12 @@
-name: Build and deploy .NET Core app to Windows WebApp WebApplication120220330192605
+name: Build and deploy .NET Core app to Windows WebApp WebApplication120220330211006
 on:
   push:
     branches:
     - master
 env:
-  AZURE_WEBAPP_NAME: WebApplication120220330192605
+  AZURE_WEBAPP_NAME: WebApplication120220330211006
   AZURE_WEBAPP_PACKAGE_PATH: ./publish
-  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.WebApplication120220330192605_51e2 }}
+  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.WebApplication120220330211006_bfb4 }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
   WORKING_DIRECTORY: .
