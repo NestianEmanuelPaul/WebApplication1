@@ -32,3 +32,9 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'NestianEmanuelPaul'
+    userRepository: 'WebApplication1'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
